@@ -1,1 +1,1 @@
-# javascript-modules
+# Javascript Modules explained by example
