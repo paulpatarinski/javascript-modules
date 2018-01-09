@@ -1,0 +1,6 @@
+{
+ "name": "@pcty/understanding-modules",
+ "dependencies": {
+  "typescript": "2.3.4"
+ }
+}
