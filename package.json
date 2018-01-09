@@ -7,6 +7,7 @@
     "typescript": "2.3.4"
   },
   "scripts": {
-    "compile:module-pattern": "cd module-pattern+bundle && copy-cli src/*.html www && concat -o www/app.js src/module2.js src/module1.js src/index.js"
+    "compile:module-pattern": "cd module-pattern+bundle && copy-cli src/*.html www && concat -o www/app.js src/module2.js src/module1.js src/index.js",
+    "compile:es6": "cd es6 && copy-cli src/*.html www && concat -o www/app.concat.js src/module2.js src/module1.js src/index.js && tsc"
   }
 }
