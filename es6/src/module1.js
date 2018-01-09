@@ -1,15 +1,18 @@
+import mod2 from "./module2.js";
+
 //Inject module 2 in
-var module1 = ((mod2) => {
- //Private variable
- var counter = 0;
- const privateFunc = () => {
-  console.log('Private function called');
- }
-
- return {
+const Module1 = {
   //Public
-  helloUniverse: () => console.log('Hello from Module 1'),
+  helloUniverse() {
 
-  helloModule2: () => mod2.hello()
- };
-})(module2);
+    var test = () => {
+
+    };
+    console.log('Hello from Module 1');
+  },
+  helloModule2() {
+    mod2.hello();
+  }
+};
+
+export default Module1;

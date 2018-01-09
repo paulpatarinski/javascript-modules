@@ -1,11 +1,12 @@
 {
  "compilerOptions": {
-  "outFile": "./www/app.js",
+  "outDir": "./www",
+  "module": "system",
   "allowJs": true,
   "target": "es5",
   "allowUnreachableCode": true
  },
  "include": [
-  "./www/app.concat.js"
+  "./src/index.js"
  ]
 }

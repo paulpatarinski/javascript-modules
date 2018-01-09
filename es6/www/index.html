@@ -7,8 +7,10 @@
 <body>
 </body>
 
-<!-- Without a build system you have to make sure scripts are included in the right order -->
-<!-- Try switching the order of the includes (you should get a undefined) -->
-<script type="text/javascript" src="./app.js"></script>
+<script type="text/javascript" src="./lib/system.js"></script>
+
+<script>
+ System.import('index.js')
+</script>
 
 </html>

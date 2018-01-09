@@ -1,8 +1,11 @@
-var module2 = (() => {
- return {
-  //Public
-  hello: () => {
-   console.log('Hello from Module 2');
-  }
- };
-})();
+const Module2 = {
+ hello() {
+
+  var test = () => {
+
+  };
+  console.log('Hello from Module 2');
+ }
+}
+
+export default Module2;
