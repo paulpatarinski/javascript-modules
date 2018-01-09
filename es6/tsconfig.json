@@ -1,0 +1,11 @@
+{
+ "compilerOptions": {
+  "outFile": "./www/app.js",
+  "allowJs": true,
+  "target": "es5",
+  "allowUnreachableCode": true
+ },
+ "include": [
+  "./www/app.concat.js"
+ ]
+}
