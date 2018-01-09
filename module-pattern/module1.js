@@ -1,4 +1,5 @@
-var testModule = (function () {
+//Inject module 2 in
+var module1 = (function (mod2) {
  //Private variable
  var counter = 0;
  function privateFunc() {
@@ -8,7 +9,10 @@ var testModule = (function () {
  return {
   //Public
   helloUniverse: function () {
-   console.log('Hello Universe');
+   console.log('Hello from Module 1');
+  },
+  helloModule2: function () {
+   mod2.hello();
   }
  };
-})();
+})(module2);
