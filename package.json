@@ -1,7 +1,12 @@
 {
- "name": "javascript-modules",
- "version": "0.0.1",
- "dependencies": {
-  "typescript": "2.3.4"
- }
+  "name": "javascript-modules",
+  "version": "0.0.1",
+  "dependencies": {
+    "concat": "^1.0.3",
+    "copy": "^0.3.1",
+    "typescript": "2.3.4"
+  },
+  "scripts": {
+    "compile:module-pattern": "cd module-pattern+bundle && copy-cli src/*.html www && concat -o www/app.js src/module2.js src/module1.js src/index.js"
+  }
 }

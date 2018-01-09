@@ -8,6 +8,7 @@ https://addyosmani.com/resources/essentialjsdesignpatterns/book/#modulepatternja
 
 1. Simple
 2. No need to setup build tools
+3. Could easily support ES6 syntax by adding typescript compiler or babel
 
 # Cons : 
 
