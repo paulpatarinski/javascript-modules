@@ -1,1 +1,1 @@
-Babelify eliminates the need to maintain babelrc & a list of files to compile. It also does not output the compiled files to disk.
+Webpack uses a single webpack config to define all the compile steps...it can handle different types of modules syntax (CommonJS, ES6) & inject its own code to make sure the modules can work in the browser
