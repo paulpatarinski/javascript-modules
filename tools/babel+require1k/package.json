@@ -1,0 +1,12 @@
+{
+    "name": "es6-babel",
+    "scripts": {
+        "build": "babel src --out-dir www --copy-files --presets=env --ignore lib/**/*",
+        "start": "cd www && lite-server"
+    },
+    "devDependencies": {
+        "babel-cli": "^6.26.0",
+        "babel-preset-env": "^1.6.1",
+        "lite-server": "^2.3.0"
+    }
+}
