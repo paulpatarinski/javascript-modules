@@ -2,20 +2,16 @@
 
 var path = require('path');
 var webpack = require('webpack');
-var CopyWebpackPlugin = require('copy-webpack-plugin');
+
+require('es6-promise').polyfill();
 
 module.exports = {
   entry: './src/index.js',
 
   output: {
     path: __dirname,
-    filename: 'www/bundle.js'
+    filename: 'dist/bundle.js'
   },
-  plugins: [
-    new CopyWebpackPlugin([
-      { from: 'src/index.html', to: 'www/index.html' }
-    ])
-  ],
   module: {
     rules: [
       {
@@ -26,8 +22,11 @@ module.exports = {
         ]
       }
     ]
-  }
-  ,
+  },
+  externals: {
+    'react': 'React',
+    'react-dom': 'ReactDOM'
+  },
   stats: {
     // Colored output
     colors: true

@@ -1,0 +1,1 @@
+Babelify eliminates the need to maintain babelrc & a list of files to compile. It also does not output the compiled files to disk.
