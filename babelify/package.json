@@ -1,0 +1,15 @@
+{
+  "name": "es6-babel",
+  "scripts": {
+    "build": "npm run copy-files && npm run compile",
+    "compile": "browserify src/index.js -o www/bundle.js -t [babelify --presets=env]",
+    "copy-files": "copyfiles src/index.html www -u 1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babelify": "^8.0.0",
+    "browserify": "^15.1.0",
+    "copyfiles": "^1.2.0"
+  }
+}
